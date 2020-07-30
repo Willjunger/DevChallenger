@@ -1,0 +1,381 @@
+* {
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+}
+
+:root {
+	--vermelho: hsl(356, 100%, 42%);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.cabecalho {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.titulo {
+	color: var(--vermelho);
+}
+
+.titulo-ponto {
+	color: black;
+}
+
+.lista {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+.lista li {
+	margin-left: 30px;
+	font-size: 20px;
+}
+
+.btn-login {
+	background-color: var(--vermelho);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 30px;
+	font-size: 17px;
+}
+
+.btn-login:hover {
+	background-color: red;
+	cursor: pointer;
+}
+
+.ligacao {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 500px;
+	padding: 20px;
+	margin-bottom: 130px;
+}
+
+.bloco-ligacao {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	padding: 10px;
+}
+
+.bloco-ligacao-orcamento {
+	display: flex;
+	flex-direction: column;
+}
+
+.alavanque {
+	font-weight: bold;
+	font-size: 20px;
+}
+.website {
+	font-size: 60px;
+	color: var(--vermelho);
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+.orcamento {
+	background-color: var(--vermelho);
+	border: none;
+	color: white;
+	border-radius: 10px;
+	font-size: 25px;
+	width: 300px;
+	height: 60px;
+}
+
+.orcamento:hover {
+	background-color: red;
+	cursor: pointer;
+}
+
+.codigo {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 500px;
+	padding: 20px;
+}
+
+.lista-codigo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 50%;
+	list-style: none;
+	font-size: 22px;
+	padding: 10px;
+}
+
+.lista-codigo li {
+	margin-bottom: 10px;
+}
+
+.icone {
+	color: white;
+	background-color: var(--vermelho);
+	border-radius: 50%;
+	padding: 5px;
+	margin-right: 15px;
+}
+
+.imagem-ligacao,
+.imagem-codigo {
+	width: 50%;
+	height: 100%;
+	padding: 10px;
+}
+
+.celular {
+	height: 300px;
+	padding: 65px;
+}
+
+.disposicao {
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.div-celular {
+	display: flex;
+	margin-top: 10px;
+}
+
+.input-celular {
+	background-color: lightgray;
+	border: none;
+	padding-left: 15px;
+	height: 50px;
+	border-radius: 5px;
+	width: 300px;
+}
+
+.btn-celular {
+	background-color: var(--vermelho);
+	border: none;
+	color: white;
+	height: 50px;
+	border-radius: 5px;
+
+	width: 250px;
+	font-size: 25px;
+	margin-left: 10px;
+}
+
+.btn-celular:hover {
+	background-color: red;
+	cursor: pointer;
+}
+
+.depoimentos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	padding: 20px;
+}
+
+.bola {
+	min-width: 60px;
+	width: 60px;
+	height: 60px;
+	margin-right: 15px;
+	background-color: var(--vermelho);
+	border-radius: 50%;
+}
+
+.primeiro-depoimento {
+	display: flex;
+	margin-right: 35px;
+	width: 50%;
+	min-height: 175px;
+
+	padding: 20px;
+	background-color: lightgray;
+	border-radius: 15px;
+	border: none;
+}
+.segundo-depoimento {
+	display: flex;
+	margin-left: 35px;
+	width: 50%;
+	min-height: 175px;
+
+	padding: 20px;
+	background-color: lightgray;
+	border-radius: 15px;
+	border: none;
+}
+.infos {
+	width: 100%;
+}
+
+.nome {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.empresa {
+	font-weight: bold;
+}
+
+.rodape {
+	color: white;
+	background-color: black;
+}
+
+.rodape-conteudo {
+	display: flex;
+	align-items: flex-start;
+}
+
+.rodape-site,
+.rodape-sobre,
+.rodape-local,
+.rodape-social {
+	padding: 30px;
+	height: 100%;
+	width: 25%;
+}
+
+.icones-social {
+	display: flex;
+	justify-content: space-between;
+	color: var(--vermelho);
+	font-size: 35px;
+}
+
+@media (max-width: 968px) {
+	.ligacao {
+		height: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.imagem-ligacao {
+		width: 70%;
+	}
+	.bloco-ligacao {
+		width: 70%;
+	}
+	.website {
+		font-size: 40px;
+	}
+	.orcamento {
+		width: 100%;
+	}
+
+	.codigo {
+		flex-direction: column-reverse;
+		align-items: center;
+		height: 100%;
+	}
+	.imagem-codigo {
+		width: 70%;
+	}
+	.lista-codigo {
+		width: 100%;
+	}
+	.depoimentos {
+		flex-direction: column;
+		height: 100%;
+	}
+	.primeiro-depoimento {
+		width: 100%;
+		margin: 0;
+	}
+	.segundo-depoimento {
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 630px) {
+	.cabecalho {
+		flex-direction: column;
+	}
+
+	.lista {
+		padding: 0;
+	}
+
+	.btn-login {
+		display: none;
+	}
+	.ligacao {
+		margin-bottom: 50px;
+	}
+	.website {
+		font-size: 30px;
+	}
+	.imagem-ligacao {
+		width: 100%;
+	}
+
+	.bloco-ligacao {
+		width: 100%;
+		align-items: unset;
+	}
+	.imagem-codigo {
+		width: 100%;
+	}
+	.celular {
+		padding: 30px;
+		height: 250px;
+	}
+	.div-celular {
+		flex-direction: column;
+		width: 100%;
+	}
+	.input-celular {
+		width: 100%;
+	}
+	.btn-celular {
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+	}
+
+	.rodape-conteudo {
+		flex-direction: column;
+	}
+
+	.rodape-site,
+	.rodape-sobre,
+	.rodape-local,
+	.rodape-social {
+		padding: 30px;
+		height: 100%;
+		width: 100%;
+	}
+	.rodape-site {
+		text-align: center;
+	}
+}
